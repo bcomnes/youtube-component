@@ -1,0 +1,54 @@
+{
+  "name": "youtube-component",
+  "version": "1.0.0",
+  "description": "A native DOM component for embedding youtube video players",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo example/basic.js --live --open",
+    "start:choo": "budo example/choo.js --live --open",
+    "start:test": "budo test.js --live --open",
+    "test": "run-s test:*",
+    "test:browser": "browserify test.js | tape-run | tap-format-spec",
+    "test:deps": "dependency-check .",
+    "test:lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcomnes/youtube-component.git"
+  },
+  "keywords": [
+    "youtube",
+    "embed",
+    "nanocomponent",
+    "choo",
+    "video",
+    "nanomorph",
+    "vimeo",
+    "dailymotion"
+  ],
+  "author": "Bret Comnes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcomnes/youtube-component/issues"
+  },
+  "homepage": "https://github.com/bcomnes/youtube-component#readme",
+  "dependencies": {
+    "bel": "^5.0.3",
+    "embed-video": "^2.0.0",
+    "nanocomponent": "^6.2.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "@tap-format/spec": "^0.2.0",
+    "bankai": "^9.0.0-1",
+    "browserify": "^14.4.0",
+    "budo": "^10.0.4",
+    "choo": "^6.0.0-4",
+    "dependency-check": "^2.9.1",
+    "global": "^4.3.2",
+    "npm-run-all": "^4.0.2",
+    "standard": "^10.0.3",
+    "tape": "^4.7.0",
+    "tape-run": "^3.0.0"
+  }
+}
