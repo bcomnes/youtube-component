@@ -16,18 +16,10 @@ function mainView (state, emit) {
     <body>
       <div id="app">
         <h1>Embed some vids</h1>
-        <div>
-          ${video1.render('https://www.youtube.com/watch?v=jnGtXnpZYDY&t=910s')}
-        </div>
-        <div>
-          ${video2.render('https://www.youtube.com/watch?v=iK6t9mJCykw')}
-        </div>
-        <div>
-          ${video3.render('https://vimeo.com/200671029')}
-        </div>
-        <div>
-          ${video4.render('http://www.dailymotion.com/video/x2ipgus')}
-        </div>
+        ${video1.render('https://www.youtube.com/watch?v=jnGtXnpZYDY&t=910s')}
+        ${video2.render('https://www.youtube.com/watch?v=iK6t9mJCykw')}
+        ${video3.render('https://vimeo.com/200671029')}
+        ${video4.render('http://www.dailymotion.com/video/x2ipgus')}
       </div>
     </body>`
 }

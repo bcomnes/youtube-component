@@ -44,6 +44,7 @@ Create an instance of a video component.  Options are passed directly to [embed-
     height:200
   },
   placeholder: true // Disable placeholder text
+  class: '' // class attribute string to apply to wrapping div
 }
 ```
 
