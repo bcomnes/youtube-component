@@ -10,7 +10,8 @@
     "test": "run-s test:*",
     "test:browser": "browserify test.js | tape-run | tap-format-spec",
     "test:deps": "dependency-check .",
-    "test:lint": "standard"
+    "test:lint": "standard",
+    "build": "bankai build example/choo.js dist"
   },
   "repository": {
     "type": "git",
