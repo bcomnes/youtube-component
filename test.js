@@ -25,7 +25,7 @@ test('render a video', function (t) {
   t.doesNotThrow(renderAndMount.bind(null, testRoot, video), 'Able to render a video')
 
   window.setTimeout(function () {
-    t.true(video.element.src.includes('youtube.com/embed/HEXWRTEbj1I'), 'A video iframe is added')
+    t.true(video.element.children[0].src.includes('youtube.com/embed/HEXWRTEbj1I'), 'A video iframe is added')
     t.end()
   }, 1000)
 })

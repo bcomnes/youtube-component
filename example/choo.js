@@ -2,10 +2,22 @@ var html = require('choo/html')
 var choo = require('choo')
 var YoutubeComponent = require('../')
 
-var video1 = new YoutubeComponent()
-var video2 = new YoutubeComponent()
-var video3 = new YoutubeComponent()
-var video4 = new YoutubeComponent()
+var video1 = new YoutubeComponent({attr: {
+  width: 480,
+  height: 270
+}})
+var video2 = new YoutubeComponent({attr: {
+  width: 480,
+  height: 270
+}})
+var video3 = new YoutubeComponent({attr: {
+  width: 480,
+  height: 270
+}})
+var video4 = new YoutubeComponent({attr: {
+  width: 480,
+  height: 270
+}})
 
 var app = choo()
 app.route('/', mainView)
