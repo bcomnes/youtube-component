@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+* Use [`nanoassert`](https://github.com/emilbayes/nanoassert) in the browser.
+
 ## 1.0.1 - 2017-08-19
 * Wrap iframe in div.  iframes are weird.
 

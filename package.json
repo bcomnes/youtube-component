@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "A native DOM component for embedding youtube video players",
   "main": "index.js",
+  "browser": {
+    "assert": "nanoassert"
+  },
   "scripts": {
     "start": "budo example/basic.js --live --open",
     "start:choo": "budo example/choo.js --live --open",
@@ -36,6 +39,7 @@
   "dependencies": {
     "bel": "^5.0.3",
     "embed-video": "^2.0.0",
+    "nanoassert": "^1.1.0",
     "nanocomponent": "^6.2.0",
     "url": "^0.11.0"
   },
