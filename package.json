@@ -6,6 +6,11 @@
   "browser": {
     "assert": "nanoassert"
   },
+  "browserify": {
+    "transform": [
+      "yo-yoify"
+    ]
+  },
   "scripts": {
     "start": "budo example/basic.js --live --open",
     "start:choo": "budo example/choo.js --live --open",
@@ -37,21 +42,22 @@
   },
   "homepage": "https://github.com/bcomnes/youtube-component#readme",
   "dependencies": {
-    "bel": "^5.0.3",
+    "bel": "^5.1.1",
     "embed-video": "^2.0.0",
     "nanoassert": "^1.1.0",
-    "nanocomponent": "^6.2.0",
-    "url": "^0.11.0"
+    "nanocomponent": "^6.4.1",
+    "url": "^0.11.0",
+    "yo-yoify": "^3.7.3"
   },
   "devDependencies": {
     "@tap-format/spec": "^0.2.0",
     "bankai": "^9.0.0-1",
     "browserify": "^14.4.0",
     "budo": "^10.0.4",
-    "choo": "^6.0.0-4",
+    "choo": "^6.0.1",
     "dependency-check": "^2.9.1",
     "global": "^4.3.2",
-    "npm-run-all": "^4.0.2",
+    "npm-run-all": "^4.1.1",
     "standard": "^10.0.3",
     "tape": "^4.7.0",
     "tape-run": "^3.0.0"

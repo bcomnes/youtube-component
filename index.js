@@ -1,5 +1,6 @@
 var Nanocomponent = require('nanocomponent')
 var html = require('bel')
+var raw = require('bel/raw')
 var assert = require('assert')
 var embedVideo = require('embed-video')
 var parse = require('url').parse
@@ -19,20 +20,13 @@ class YoutubeComponent extends Nanocomponent {
     assert.equal(typeof url, 'string', 'YoutubeComponent: youtubeURL must be a string')
     this.url = url
     var embed = embedVideo(url, this.opts)
-    var el
     if (embed) {
-      if (typeof window !== 'undefined') {
-        el = html`<div class='${this.opts.class}'></div>`
-        el.innerHTML = embed
-        return el
-      } else {
-        return html`<div class='${this.opts.class}'>${embed}</div>`
-      }
+      return html`<div class='${this.opts.class}'>${raw(embed)}</div>`
     } else {
       return (
-              this.opts.placeholder
-                ? html`<div>Can't embed: ${parse(url).href}</div>`
-                : html`<div></div>`)
+        this.opts.placeholder
+        ? html`<div>Can't embed: ${parse(url).href}</div>`
+        : html`<div></div>`)
     }
   }
 
