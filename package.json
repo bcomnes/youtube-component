@@ -47,7 +47,7 @@
     "nanoassert": "^1.1.0",
     "nanocomponent": "^6.4.1",
     "url": "^0.11.0",
-    "yo-yoify": "^3.7.3"
+    "yo-yoify": "^4.0.0"
   },
   "devDependencies": {
     "@tap-format/spec": "^0.2.0",
