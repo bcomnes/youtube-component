@@ -26,7 +26,7 @@
     "@tap-format/spec": "^0.2.0",
     "bankai": "^9.3.1",
     "browserify": "^15.0.0",
-    "budo": "^10.0.4",
+    "budo": "^11.0.0",
     "choo": "^6.0.1",
     "dependency-check": "^2.9.1",
     "global": "^4.3.2",
