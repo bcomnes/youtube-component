@@ -25,8 +25,8 @@ class YoutubeComponent extends Nanocomponent {
     } else {
       return (
         this.opts.placeholder
-        ? html`<div>Can't embed: ${parse(url).href}</div>`
-        : html`<div></div>`)
+          ? html`<div>Can't embed: ${parse(url).href}</div>`
+          : html`<div></div>`)
     }
   }
 
