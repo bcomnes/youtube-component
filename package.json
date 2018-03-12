@@ -15,7 +15,7 @@
     "url": "https://github.com/bcomnes/youtube-component/issues"
   },
   "dependencies": {
-    "bel": "^5.1.1",
+    "bel": "^6.0.0",
     "embed-video": "^2.0.0",
     "nanoassert": "^1.1.0",
     "nanocomponent": "^6.4.1",
