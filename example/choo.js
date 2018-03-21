@@ -14,10 +14,6 @@ var video3 = new YoutubeComponent({attr: {
   width: 480,
   height: 270
 }})
-var video4 = new YoutubeComponent({attr: {
-  width: 480,
-  height: 270
-}})
 
 var app = choo()
 app.route('/', mainView)
@@ -29,9 +25,8 @@ function mainView (state, emit) {
       <div id="app">
         <h1>Embed some vids</h1>
         ${video1.render('https://www.youtube.com/watch?v=jnGtXnpZYDY&t=910s')}
-        ${video2.render('https://www.youtube.com/watch?v=iK6t9mJCykw')}
-        ${video3.render('https://vimeo.com/200671029')}
-        ${video4.render('http://www.dailymotion.com/video/x2ipgus')}
+        ${video2.render('https://vimeo.com/200671029')}
+        ${video3.render('http://www.dailymotion.com/video/x2ipgus')}
       </div>
     </body>`
 }
