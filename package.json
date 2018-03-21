@@ -15,10 +15,10 @@
     "url": "https://github.com/bcomnes/youtube-component/issues"
   },
   "dependencies": {
-    "bel": "^5.1.1",
     "embed-video": "^2.0.0",
     "nanoassert": "^1.1.0",
     "nanocomponent": "^6.4.1",
+    "nanohtml": "^1.2.1",
     "url": "^0.11.0",
     "yo-yoify": "^4.3.0"
   },
@@ -54,6 +54,7 @@
   },
   "scripts": {
     "build": "bankai build example/choo.js dist",
+    "build:preview": "bankai start example/choo.js",
     "start": "budo example/basic.js --live --open",
     "start:choo": "budo example/choo.js --live --open",
     "start:test": "budo test.js --live --open",

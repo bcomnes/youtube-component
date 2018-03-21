@@ -1,4 +1,4 @@
-var html = require('choo/html')
+var html = require('nanohtml')
 var choo = require('choo')
 var YoutubeComponent = require('../')
 
