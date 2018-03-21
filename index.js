@@ -19,7 +19,12 @@ class YoutubeComponent extends Nanocomponent {
   createElement (url) {
     assert.equal(typeof url, 'string', 'YoutubeComponent: youtubeURL must be a string')
     this.url = url
-    var embed = embedVideo(url, this.opts)
+    var embed
+    try {
+      embed = embedVideo(url, this.opts)
+    } catch (e) {
+      console.error(e)
+    }
     if (embed) {
       return html`<div class='${this.opts.class}'>${raw(embed)}</div>`
     } else {
