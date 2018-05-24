@@ -24,13 +24,16 @@
   },
   "devDependencies": {
     "@tap-format/spec": "^0.2.0",
-    "bankai": "^9.5.1",
     "browserify": "^16.0.0",
     "budo": "^11.0.0",
     "choo": "^6.0.1",
+    "cpx": "^1.5.0",
     "dependency-check": "^3.0.0",
     "global": "^4.3.2",
+    "mkdirp": "^0.5.1",
+    "nanocomponent-cache": "^1.1.0",
     "npm-run-all": "^4.1.1",
+    "rimraf": "^2.6.2",
     "standard": "^11.0.0",
     "tape": "^4.7.0",
     "tape-run": "^3.0.0"
@@ -53,10 +56,9 @@
     "url": "git+https://github.com/bcomnes/youtube-component.git"
   },
   "scripts": {
-    "build": "bankai build example/choo.js dist",
-    "build:preview": "bankai start example/choo.js",
-    "start": "budo example/basic.js --live --open",
-    "start:choo": "budo example/choo.js --live --open",
+    "build": "rimraf build && mkdirp build && browserify example/choo.js -o build/bundle.js && cpx 'example/static/*' build",
+    "start": "budo example/choo.js:bundle.js --dir example/static --live --open",
+    "start:basic": "budo example/basic.js --live --open",
     "start:test": "budo test.js --live --open",
     "test": "run-s test:*",
     "test:browser": "browserify test.js | tape-run | tap-format-spec",
