@@ -28,7 +28,7 @@
     "budo": "^11.0.0",
     "choo": "^6.13.0",
     "cpx": "^1.5.0",
-    "dependency-check": "^3.0.0",
+    "dependency-check": "^3.3.0",
     "global": "^4.3.2",
     "mkdirp": "^0.5.1",
     "nanocomponent-cache": "^1.1.0",
