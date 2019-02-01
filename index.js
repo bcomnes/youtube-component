@@ -1,7 +1,7 @@
 var Nanocomponent = require('nanocomponent')
 var html = require('nanohtml')
 var raw = require('nanohtml/raw')
-var assert = require('assert')
+var assert = require('nanoassert')
 var embedVideo = require('embed-video')
 var parse = require('url').parse
 
