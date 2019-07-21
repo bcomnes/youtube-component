@@ -3,7 +3,7 @@ var html = require('nanohtml')
 var raw = require('nanohtml/raw')
 var assert = require('nanoassert')
 var embedVideo = require('embed-video')
-var parse = require('url').parse
+var URL = require('url').URL
 
 class YoutubeComponent extends Nanocomponent {
   constructor (opts) {
@@ -28,9 +28,10 @@ class YoutubeComponent extends Nanocomponent {
     if (embed) {
       return html`<div class='${this.opts.class}'>${raw(embed)}</div>`
     } else {
+      const urlObj = new URL(url)
       return (
         this.opts.placeholder
-          ? html`<div>Can't embed: ${parse(url).href}</div>`
+          ? html`<div>Can't embed: ${urlObj.href}</div>`
           : html`<div></div>`)
     }
   }
