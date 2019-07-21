@@ -17,7 +17,7 @@ class YoutubeComponent extends Nanocomponent {
   }
 
   createElement (url) {
-    assert.equal(typeof url, 'string', 'YoutubeComponent: youtubeURL must be a string')
+    assert(typeof url === 'string', 'YoutubeComponent: youtubeURL must be a string')
     this.url = url
     var embed
     try {
