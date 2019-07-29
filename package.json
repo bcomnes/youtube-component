@@ -59,7 +59,7 @@
     "start:test": "budo test.js --live --open",
     "test": "run-s test:*",
     "test:browser": "browserify test.js | tape-run | tap-format-spec",
-    "test:deps": "dependency-check .",
+    "test:deps": "dependency-check . --no-dev --no-peer",
     "test:lint": "standard"
   }
 }
