@@ -16,7 +16,6 @@
     "nanoassert": "^2.0.0",
     "nanocomponent": "^6.5.2",
     "nanohtml": "^1.6.3",
-    "url": "^0.11.0",
     "yo-yoify": "^4.3.0"
   },
   "devDependencies": {
@@ -25,7 +24,7 @@
     "budo": "^11.6.2",
     "choo": "^6.13.3",
     "cpx": "^1.5.0",
-    "dependency-check": "^3.4.1",
+    "dependency-check": "^4.1.0",
     "global": "^4.4.0",
     "mkdirp": "^0.5.1",
     "nanocomponent-cache": "^1.1.0",
@@ -59,7 +58,7 @@
     "start:test": "budo test.js --live --open",
     "test": "run-s test:*",
     "test:browser": "browserify test.js | tape-run | tap-format-spec",
-    "test:deps": "dependency-check .",
+    "test:deps": "dependency-check . --no-dev --no-peer -i yo-yoify",
     "test:lint": "standard"
   }
 }
