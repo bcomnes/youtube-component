@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@tap-format/spec": "^0.2.0",
-    "browserify": "^16.3.0",
+    "browserify": "^16.5.1",
     "budo": "^11.6.2",
     "choo": "^6.13.3",
     "cpx2": "^2.0.0",
